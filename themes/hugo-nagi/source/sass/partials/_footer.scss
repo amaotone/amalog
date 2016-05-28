@@ -1,0 +1,16 @@
+footer {
+  @include rhythm-padding(1);
+  .footer-link {
+    text-align: center;
+    @include adjust-font-size-to(2rem);
+  }
+  a {
+    @include unstyled-link;
+  }
+}
+
+.copyright {
+  text-align: center;
+  @include adjust-font-size-to(0.5rem);
+  color: #999;
+}
