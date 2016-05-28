@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>amalog.net</title>
+    <link>http://amalog.net/tags/</link>
+    <description>Recent content on amalog.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 28 May 2016 17:18:38 +0900</lastBuildDate>
+    <atom:link href="http://amalog.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Works</title>
+      <link>http://amalog.net/works/</link>
+      <pubDate>Sat, 28 May 2016 17:18:38 +0900</pubDate>
+      
+      <guid>http://amalog.net/works/</guid>
+      <description>&lt;p&gt;完成したものを列挙していきたい。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Works</title>
+      <link>http://amalog.net/works/</link>
+      <pubDate>Sat, 28 May 2016 17:18:38 +0900</pubDate>
+      
+      <guid>http://amalog.net/works/</guid>
+      <description>&lt;p&gt;完成したものを列挙していきたい。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
