@@ -1,0 +1,11 @@
+.single {
+  .entry-meta {
+    @include adjust-font-size-to(0.8rem);
+    color: #999;
+  }
+  .entry-body {
+    h1 {
+      border-bottom: 1px solid #f0f0f0;
+    }
+  }
+}
