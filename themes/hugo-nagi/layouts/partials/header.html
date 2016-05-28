@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+<head>
+    <meta charset="utf-8">
+    {{ .Hugo.Generator }}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="{{ .Site.Title }}">
+    <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}</title>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="site-header" role="banner">
+        <div class="site-logo">
+            <a href="/"><img src="{{ .Site.Params.logo }}" width="50" height="50" alt="{{ .Site.Title }}"></a>
+            <h1 class="site-title"><a href="/">{{ .Site.Title }}</a></h1>
+        </div>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="/about">about</a></li>
+                <!-- <li><a href="/works">works</a></li> -->
+                <li><a href="/">post</a></li>
+                <li><a href="/index.xml">feed</a></li>
+            </ul>
+        </nav>
+    </header>
