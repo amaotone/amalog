@@ -472,6 +472,7 @@ footer a:active, footer a:focus {
 }
 .list ul {
   margin: 0;
+  padding: 0;
   padding-top: 27px;
   padding-top: 1.6875rem;
   padding-bottom: 27px;
