@@ -5,6 +5,7 @@
   }
   ul {
     margin: 0;
+    padding: 0;
     @include rhythm-padding(1);
   }
   li {
