@@ -95,7 +95,7 @@ a:hover {
 body {
   color: #555;
   line-height: 1.5;
-  font-family: Roboto, “Droid sans”, “遊ゴシック”, “Yu Gothic”, “メイリオ”, “Meiryo”, “ヒラギノ角ゴ Pro W3”, “Hiragino Kaku Gothic ProN” sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, "Droid Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, sans-serif;
 }
 
 h1 {
@@ -155,7 +155,7 @@ strong, em {
 }
 
 code {
-  font-family: Consolas, Menlo, 'Liberation Mono', Courier, monospace;
+  font-family: Consolas, Monaco, 'Liberation Mono', Courier, monospace;
 }
 
 .site-header {
