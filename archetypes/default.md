@@ -1,8 +1,8 @@
 ---
 date: now()
-slug: 
+slug:
 tags: ["", ""]
 title:
-draft: true
-hidefromhome: false
+draft: "true"
+hidefromhome: "false"
 ---
