@@ -11,10 +11,10 @@
     
     <item>
       <title>Jupyter Notebookをサーバー上で動かす</title>
-      <link>http://amalog.net/post/160531-jupyter-server/</link>
+      <link>http://amalog.net/post/jupyter-server/</link>
       <pubDate>Tue, 31 May 2016 10:37:08 +0900</pubDate>
       
-      <guid>http://amalog.net/post/160531-jupyter-server/</guid>
+      <guid>http://amalog.net/post/jupyter-server/</guid>
       <description>
 
 &lt;p&gt;Jupyter Notebookをサーバー上で動かした時のメモです。&lt;/p&gt;
@@ -28,7 +28,7 @@
 
 &lt;p&gt;以下はサーバー上にsshで接続して操作を行ってください。&lt;/p&gt;
 
-&lt;h1 id=&#34;パスワードの生成:e6a1c8d9b76b433c2229aa19b653ed34&#34;&gt;パスワードの生成&lt;/h1&gt;
+&lt;h1 id=&#34;パスワードの生成:a640c7d84fd41d9fa336f977338f64f8&#34;&gt;パスワードの生成&lt;/h1&gt;
 
 &lt;p&gt;自分のJupyter Notebookを他人にいじられると困るので、パスワードでロックをかけます。&lt;/p&gt;
 
@@ -39,7 +39,7 @@
 
 &lt;p&gt;パスワードを適当に入力してsha鍵を生成したら、コピーしておきます。&lt;/p&gt;
 
-&lt;h1 id=&#34;jupyterの設定:e6a1c8d9b76b433c2229aa19b653ed34&#34;&gt;Jupyterの設定&lt;/h1&gt;
+&lt;h1 id=&#34;jupyterの設定:a640c7d84fd41d9fa336f977338f64f8&#34;&gt;Jupyterの設定&lt;/h1&gt;
 
 &lt;p&gt;Jupyterのコンフィグファイルを生成します。&lt;/p&gt;
 
@@ -54,7 +54,7 @@ c.NotebookApp.password = &amp;lt;input your sha key&amp;gt;
 c.NotebookApp.open_browser = False
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;jupyterの起動:e6a1c8d9b76b433c2229aa19b653ed34&#34;&gt;Jupyterの起動&lt;/h1&gt;
+&lt;h1 id=&#34;jupyterの起動:a640c7d84fd41d9fa336f977338f64f8&#34;&gt;Jupyterの起動&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ jupyter notebook
 &lt;/code&gt;&lt;/pre&gt;
@@ -67,10 +67,10 @@ c.NotebookApp.open_browser = False
     
     <item>
       <title>週末の過ごし方がわからない</title>
-      <link>http://amalog.net/post/160528-weekend/</link>
+      <link>http://amalog.net/post/weekend-melancory/</link>
       <pubDate>Sat, 28 May 2016 18:10:40 +0900</pubDate>
       
-      <guid>http://amalog.net/post/160528-weekend/</guid>
+      <guid>http://amalog.net/post/weekend-melancory/</guid>
       <description>&lt;p&gt;平日が慌ただしく過ぎていく。データの解析をして、論文を呼んで、ディスカッションをして。
 適度に息抜きをしつつやっているものの、気づいたらすぐに金曜日がやってくる。&lt;/p&gt;
 
@@ -104,7 +104,7 @@ c.NotebookApp.open_browser = False
       <guid>http://amalog.net/post/macbook-pro-init/</guid>
       <description>
 
-&lt;h1 id=&#34;ソフトウェア:d211962ceffb068be45b0a5bcf01e9e8&#34;&gt;ソフトウェア&lt;/h1&gt;
+&lt;h1 id=&#34;ソフトウェア:a47e79b698dcfd74ba3f68b5e0d07938&#34;&gt;ソフトウェア&lt;/h1&gt;
 
 &lt;p&gt;&lt;code&gt;homebrew-cask&lt;/code&gt;を使うとバイナリもhomebrewで入れられて便利！
 みたいな話を聞いたけど、いろいろ問題点もあるみたいなので今回は見送りました。&lt;/p&gt;
@@ -132,14 +132,14 @@ c.NotebookApp.open_browser = False
 &lt;li&gt;PyCharm&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;homebrew:d211962ceffb068be45b0a5bcf01e9e8&#34;&gt;homebrew&lt;/h1&gt;
+&lt;h1 id=&#34;homebrew:a47e79b698dcfd74ba3f68b5e0d07938&#34;&gt;homebrew&lt;/h1&gt;
 
 &lt;p&gt;パッケージマネージャはみんな大好きhomebrewです。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ /usr/bin/ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;入れたもの:d211962ceffb068be45b0a5bcf01e9e8&#34;&gt;入れたもの&lt;/h2&gt;
+&lt;h2 id=&#34;入れたもの:a47e79b698dcfd74ba3f68b5e0d07938&#34;&gt;入れたもの&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;git&lt;/li&gt;
@@ -155,7 +155,7 @@ c.NotebookApp.open_browser = False
 &lt;li&gt;ruby-build&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;python:d211962ceffb068be45b0a5bcf01e9e8&#34;&gt;Python&lt;/h1&gt;
+&lt;h1 id=&#34;python:a47e79b698dcfd74ba3f68b5e0d07938&#34;&gt;Python&lt;/h1&gt;
 
 &lt;p&gt;&lt;code&gt;~/.bash_profile&lt;/code&gt;に追記&lt;/p&gt;
 
@@ -172,7 +172,7 @@ eval &amp;quot;$(pyenv init -)&amp;quot;
 $ pyenv global anaconda3-4.0.0
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;ruby:d211962ceffb068be45b0a5bcf01e9e8&#34;&gt;Ruby&lt;/h1&gt;
+&lt;h1 id=&#34;ruby:a47e79b698dcfd74ba3f68b5e0d07938&#34;&gt;Ruby&lt;/h1&gt;
 
 &lt;p&gt;&lt;code&gt;~/.bash_profile&lt;/code&gt;に追記&lt;/p&gt;
 
@@ -189,7 +189,7 @@ eval &amp;quot;$(rbenv init -)&amp;quot;
 $ rbenv global 2.3.1
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;フォント:d211962ceffb068be45b0a5bcf01e9e8&#34;&gt;フォント&lt;/h1&gt;
+&lt;h1 id=&#34;フォント:a47e79b698dcfd74ba3f68b5e0d07938&#34;&gt;フォント&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Ricty Diminished&lt;/li&gt;
