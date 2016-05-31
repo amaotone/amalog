@@ -124,7 +124,6 @@ p {
 pre {
   margin-top: 27px;
   margin-top: 1.6875rem;
-  overflow-x: scroll;
 }
 
 ul {
@@ -156,6 +155,7 @@ strong, em {
 
 code {
   font-family: Consolas, Monaco, 'Liberation Mono', Courier, monospace;
+  overflow-x: scroll;
 }
 
 .site-header {
