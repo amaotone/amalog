@@ -1,6 +1,6 @@
 +++
 date = "2016-05-31T10:37:08+09:00"
-draft = "true"
+draft = "false"
 hidefromhome = "false"
 tags = ["python"]
 title = "Jupyter Notebookをサーバー上で動かす"

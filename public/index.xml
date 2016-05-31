@@ -6,8 +6,64 @@
     <description>Recent content on amalog.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 28 May 2016 18:10:40 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 31 May 2016 10:37:08 +0900</lastBuildDate>
     <atom:link href="http://amalog.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Jupyter Notebookをサーバー上で動かす</title>
+      <link>http://amalog.net/post/160531-jupyter-server/</link>
+      <pubDate>Tue, 31 May 2016 10:37:08 +0900</pubDate>
+      
+      <guid>http://amalog.net/post/160531-jupyter-server/</guid>
+      <description>
+
+&lt;p&gt;Jupyter Notebookをサーバー上で動かした時のメモです。&lt;/p&gt;
+
+&lt;p&gt;前提&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;サーバーにsshで接続できる&lt;/li&gt;
+&lt;li&gt;サーバーにjupyterが入っている&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;以下はサーバー上にsshで接続して操作を行ってください。&lt;/p&gt;
+
+&lt;h1 id=&#34;パスワードの生成:e6a1c8d9b76b433c2229aa19b653ed34&#34;&gt;パスワードの生成&lt;/h1&gt;
+
+&lt;p&gt;自分のJupyter Notebookを他人にいじられると困るので、パスワードでロックをかけます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;$ python
+&amp;gt;&amp;gt;&amp;gt; from notebook.auth import passwd
+&amp;gt;&amp;gt;&amp;gt; passwd()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;パスワードを適当に入力してsha鍵を生成したら、コピーしておきます。&lt;/p&gt;
+
+&lt;h1 id=&#34;jupyterの設定:e6a1c8d9b76b433c2229aa19b653ed34&#34;&gt;Jupyterの設定&lt;/h1&gt;
+
+&lt;p&gt;Jupyterのコンフィグファイルを生成します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ jupyter notebook --generate-config
+$ vi ~/.jupyter/jupyter_notebook_config.py
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;以下の3行のコメントアウトをはずし、変更します&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;c.NotebookApp.ip = &#39;*&#39;
+c.NotebookApp.password = &amp;lt;input your sha key&amp;gt;
+c.NotebookApp.open_browser = False
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;jupyterの起動:e6a1c8d9b76b433c2229aa19b653ed34&#34;&gt;Jupyterの起動&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ jupyter notebook
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;今回やったのはこれだけです。&lt;/p&gt;
+
+&lt;p&gt;VPN上のサーバーでごにょごにょやる分にはとりあえずOKだと思いますが、時間があったらセキュアに接続する方法をやってみます。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>週末の過ごし方がわからない</title>
