@@ -53,4 +53,4 @@ TeXファイルやらPowerPointファイルやらは`documents`の中に放り�
 
 # 関連記事
 
-- [Jupyter Notebookをサーバー上で動かす](http://localhost:1313/post/jupyter-server/)
+- [Jupyter Notebookをサーバー上で動かす](/post/jupyter-server/)
