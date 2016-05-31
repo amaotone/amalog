@@ -1,6 +1,6 @@
 +++
 date = "2016-06-01T00:28:25+09:00"
-draft = "true"
+draft = "false"
 hidefromhome = "false"
 slug = "data-analysis-with-jupyter"
 tags = ["python"]
@@ -53,4 +53,4 @@ TeXファイルやらPowerPointファイルやらは`documents`の中に放り�
 
 # 関連記事
 
-- [Jupyter Notebookをサーバー上で動かす](http://localhost:1313/post/jupyter-server/) 
+- [Jupyter Notebookをサーバー上で動かす](http://localhost:1313/post/jupyter-server/)

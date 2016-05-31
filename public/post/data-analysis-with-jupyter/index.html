@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="amalog.net">
+    <title>Jupyter Notebookで作る快適なデータ解析ライフ</title>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="site-header" role="banner">
+        <div class="site-logo">
+            <a href="/"><img src="/images/profile.jpg" width="50" height="50" alt="amalog.net"></a>
+            <h1 class="site-title"><a href="/">amalog.net</a></h1>
+        </div>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="/about">about</a></li>
+                
+                <li><a href="/">post</a></li>
+                <li><a href="/index.xml">feed</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<main role="main" class="single">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 class="entry-title" itemprop="headline">Jupyter Notebookで作る快適なデータ解析ライフ</h1>
+        <span class="entry-meta"><time itemprop="datePublished" datetime=" 2016-06-01">June 01, 2016</time></span>
+        <section class="entry-body" itemprop="entry-text">
+            
+
+<p>研究室に配属され、Pythonでデータ解析をするようになって2ヶ月が経過しました。</p>
+
+<p>データ解析のベストプラクティスは探してもあまり出てこないのですが、
+試行錯誤の結果ひとつの形に辿り着いたのでアウトプットしておきます。</p>
+
+<p>データ解析と普通のプログラミングの違う点は「正しい実行結果」というのが分かりづらく、
+Trial-and-Errorなアプローチになりがちなところだと思います。
+その際、Jupyterで実行結果を適宜確認しながら解析を進められるのは安心感があります。</p>
+
+<h1 id="フォルダ構成:cefb4b859976ea1d247097a5fdd4ee77">フォルダ構成</h1>
+
+<p>フォルダ構成はざっくりこんな感じです。</p>
+
+<pre><code>.
+├── data
+│   └── hoge.csv
+├── libs
+│   ├── fuga.py
+│   └── tests
+│       └── test_fuga.py
+├── notes
+├── documents
+└── experiment.ipynb
+</code></pre>
+
+<p>再利用したいコードは全部<code>libs</code>に入れ、適宜テストを書きながら実装を進めます。</p>
+
+<p>メモは<code>notes</code>の中にMarkdownかJupyterで書き、
+結果を残したいケーススタディとか実験とかはJupyterを使ってまとめます。</p>
+
+<p>TeXファイルやらPowerPointファイルやらは<code>documents</code>の中に放り込みます。</p>
+
+<h1 id="工夫したところ:cefb4b859976ea1d247097a5fdd4ee77">工夫したところ</h1>
+
+<p>解析の初期では全部pythonスクリプト内で完結させようと考えていたのですが、
+ログを残したりプロットを保存したりするのが面倒でした。</p>
+
+<p>そこで、今までメモやちょっとした実験程度にしか使っていなかったJupyterを格上げし、
+実際の解析スクリプトを全部Jupyterに移行してしまおうと考えました。</p>
+
+<p>まだ少ししか使っていないので有用かどうかはわかりませんが、今のところは問題なさそうです。</p>
+
+<h1 id="関連記事:cefb4b859976ea1d247097a5fdd4ee77">関連記事</h1>
+
+<ul>
+<li><a href="http://localhost:1313/post/jupyter-server/">Jupyter Notebookをサーバー上で動かす</a></li>
+</ul>
+
+        </section>
+    </article>
+    <div id="disqus_thread"></div>
+    <script>
+        
+
+        
+
+        (function () { 
+            var d = document,
+                    s = d.createElement('script');
+            s.src = '//amalog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the comments.</a></noscript>
+</main>
+
+<footer role="contentinfo">
+    <div class="hr"></div>
+    <div class="footer-link">
+        
+        <a href="https://twitter.com/sakueji" target="_blank"><i class="fa fa-twitter-square"></i></a>
+        <a href="https://www.facebook.com/amane.suzu" target="_blank"><i class="fa fa-facebook-square"></i></a>
+        <a href="https://github.com/amaotone" target="_blank"><i class="fa fa-github-square"></i></a>
+    </div>
+    <div class="copyright">Copyright &copy; 2016 amalog.net all rights reserved.</div>
+</footer>
+
+</div>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
+
