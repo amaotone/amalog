@@ -6,8 +6,66 @@
     <description>Recent content in Python on amalog.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 31 May 2016 10:37:08 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jun 2016 00:28:25 +0900</lastBuildDate>
     <atom:link href="http://amalog.net/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Jupyter Notebookで作る快適なデータ解析ライフ</title>
+      <link>http://amalog.net/post/data-analysis-with-jupyter/</link>
+      <pubDate>Wed, 01 Jun 2016 00:28:25 +0900</pubDate>
+      
+      <guid>http://amalog.net/post/data-analysis-with-jupyter/</guid>
+      <description>
+
+&lt;p&gt;研究室に配属され、Pythonでデータ解析をするようになって2ヶ月が経過しました。&lt;/p&gt;
+
+&lt;p&gt;データ解析のベストプラクティスは探してもあまり出てこないのですが、
+試行錯誤の結果ひとつの形に辿り着いたのでアウトプットしておきます。&lt;/p&gt;
+
+&lt;p&gt;データ解析と普通のプログラミングの違う点は「正しい実行結果」というのが分かりづらく、
+Trial-and-Errorなアプローチになりがちなところだと思います。
+その際、Jupyterで実行結果を適宜確認しながら解析を進められるのは安心感があります。&lt;/p&gt;
+
+&lt;h1 id=&#34;フォルダ構成:cefb4b859976ea1d247097a5fdd4ee77&#34;&gt;フォルダ構成&lt;/h1&gt;
+
+&lt;p&gt;フォルダ構成はざっくりこんな感じです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.
+├── data
+│   └── hoge.csv
+├── libs
+│   ├── fuga.py
+│   └── tests
+│       └── test_fuga.py
+├── notes
+├── documents
+└── experiment.ipynb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;再利用したいコードは全部&lt;code&gt;libs&lt;/code&gt;に入れ、適宜テストを書きながら実装を進めます。&lt;/p&gt;
+
+&lt;p&gt;メモは&lt;code&gt;notes&lt;/code&gt;の中にMarkdownかJupyterで書き、
+結果を残したいケーススタディとか実験とかはJupyterを使ってまとめます。&lt;/p&gt;
+
+&lt;p&gt;TeXファイルやらPowerPointファイルやらは&lt;code&gt;documents&lt;/code&gt;の中に放り込みます。&lt;/p&gt;
+
+&lt;h1 id=&#34;工夫したところ:cefb4b859976ea1d247097a5fdd4ee77&#34;&gt;工夫したところ&lt;/h1&gt;
+
+&lt;p&gt;解析の初期では全部pythonスクリプト内で完結させようと考えていたのですが、
+ログを残したりプロットを保存したりするのが面倒でした。&lt;/p&gt;
+
+&lt;p&gt;そこで、今までメモやちょっとした実験程度にしか使っていなかったJupyterを格上げし、
+実際の解析スクリプトを全部Jupyterに移行してしまおうと考えました。&lt;/p&gt;
+
+&lt;p&gt;まだ少ししか使っていないので有用かどうかはわかりませんが、今のところは問題なさそうです。&lt;/p&gt;
+
+&lt;h1 id=&#34;関連記事:cefb4b859976ea1d247097a5fdd4ee77&#34;&gt;関連記事&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/jupyter-server/&#34;&gt;Jupyter Notebookをサーバー上で動かす&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Jupyter Notebookをサーバー上で動かす</title>
