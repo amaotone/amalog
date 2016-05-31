@@ -303,3 +303,9 @@ footer a:active, footer a:focus {
 .single .entry-body h1 {
   border-bottom: 1px solid #f0f0f0;
 }
+
+@media screen and (max-width: 600px) {
+  .single {
+    padding: 0 0.5rem;
+  }
+}
