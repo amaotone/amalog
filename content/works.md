@@ -1,8 +1,8 @@
 +++
 date = "2016-05-28T17:18:38+09:00"
-draft = false
+draft = true
 hidefromhome = true
-tags = ["", ""]
+tags = ["info"]
 title = "Works"
 +++
 

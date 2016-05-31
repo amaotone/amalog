@@ -1,8 +1,9 @@
----
-date: now()
-slug:
-tags: ["", ""]
-title:
-draft: "true"
-hidefromhome: "false"
----
++++
+date = "now()"
+slug = ""
+tags = ["diary"]
+title = ""
+draft = "true"
+hidefromhome = "false"
+
++++
