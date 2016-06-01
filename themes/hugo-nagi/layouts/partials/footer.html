@@ -2,9 +2,9 @@
     <div class="hr"></div>
     <div class="footer-link">
         {{ with .Site.Params.email }}<a href="mailto:{{ . }}" target="_blank"><i class="fa fa-envelope-square"></i></a>{{ end }}
-        {{ with .Site.Params.twitter }}<a href="{{ . }}" target="_blank"><i class="fa fa-twitter-square"></i></a>{{ end }}
-        {{ with .Site.Params.facebook }}<a href="{{ . }}" target="_blank"><i class="fa fa-facebook-square"></i></a>{{ end }}
-        {{ with .Site.Params.github }}<a href="{{ . }}" target="_blank"><i class="fa fa-github-square"></i></a>{{ end }}
+        {{ with .Site.Params.twitter }}<a href="{{ . }}" class="twitter" target="_blank"><i class="fa fa-twitter-square"></i></a>{{ end }}
+        {{ with .Site.Params.facebook }}<a href="{{ . }}" class="facebook" target="_blank"><i class="fa fa-facebook-square"></i></a>{{ end }}
+        {{ with .Site.Params.github }}<a href="{{ . }}" class="github" target="_blank"><i class="fa fa-github-square"></i></a>{{ end }}
     </div>
     <div class="copyright">Copyright &copy; {{ .Site.Params.copyright | safeHTML }}</div>
 </footer>

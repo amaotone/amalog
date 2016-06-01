@@ -120,6 +120,11 @@ p {
   margin-top: 27px;
   margin-top: 1.6875rem;
 }
+p code {
+  background-color: #f8f8f8;
+  padding: 0.1rem 0.2rem;
+  margin: 0 0.1rem;
+}
 
 pre {
   margin-top: 27px;
@@ -154,6 +159,11 @@ strong, em {
 }
 
 code {
+  -moz-border-radius: 3px / 3px;
+  -webkit-border-radius: 3px 3px;
+  border-radius: 3px / 3px;
+  font-size: 0.8rem;
+  vertical-align: middle;
   font-family: Consolas, Monaco, 'Liberation Mono', Courier, monospace;
   overflow-x: scroll;
 }
@@ -226,12 +236,13 @@ footer {
 }
 footer .footer-link {
   text-align: center;
-  font-size: 32px;
-  font-size: 2rem;
+  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 54px;
   line-height: 3.375rem;
 }
 footer a {
+  margin: 0 0.2rem;
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
@@ -247,6 +258,18 @@ footer a:active, footer a:focus {
   line-height: 27px;
   line-height: 1.6875rem;
   color: #999;
+}
+
+.twitter:hover {
+  color: #55acee;
+}
+
+.facebook:hover {
+  color: #315096;
+}
+
+.github:hover {
+  color: #4183c4;
 }
 
 .list .list-title {

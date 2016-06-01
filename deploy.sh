@@ -5,7 +5,7 @@ rm -rf public/
 hugo
 git add -A
 
-msg="rebuilding site `date`"
+msg="rebuilding site at $(date +"%Y-%m-%d %H:%M:%S")"
 if [ $# -eq 1 ]
 	then msg="$1"
 fi

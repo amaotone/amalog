@@ -22,6 +22,11 @@ h4, h5, h6 {
 
 p {
   @include margin-leader(1);
+  code {
+      background-color: #f8f8f8;
+      padding: 0.1rem 0.2rem;
+      margin: 0 0.1rem;
+  }
 }
 
 pre {
@@ -54,6 +59,9 @@ strong, em {
 }
 
 code {
+    @include border-radius(3px, 3px);
+    font-size: 0.8rem;
+    vertical-align: middle;
     font-family: Consolas, Monaco, 'Liberation Mono', Courier, monospace;
     overflow-x: scroll;
 }

@@ -2,9 +2,10 @@ footer {
   @include rhythm-padding(1);
   .footer-link {
     text-align: center;
-    @include adjust-font-size-to(2rem);
+    @include adjust-font-size-to(2.5rem);
   }
   a {
+    margin: 0 0.2rem;
     @include unstyled-link;
   }
 }
@@ -14,3 +15,7 @@ footer {
   @include adjust-font-size-to(0.5rem);
   color: #999;
 }
+
+.twitter:hover {color: #55acee}
+.facebook:hover {color: #315096}
+.github:hover {color: #4183c4}
