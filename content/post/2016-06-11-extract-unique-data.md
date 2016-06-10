@@ -2,7 +2,7 @@
 date = "2016-06-11T02:06:04+09:00"
 draft = "false"
 hidefromhome = "false"
-slug = "count-unique-data"
+slug = "extract-unique-data"
 tags = ["Python"]
 title = "集合型で2次元リスト中のユニークな行を抽出する"
 +++

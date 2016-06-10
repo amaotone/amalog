@@ -11,10 +11,10 @@
     
     <item>
       <title>集合型で2次元リスト中のユニークな行を抽出する</title>
-      <link>http://amalog.net/post/count-unique-data/</link>
+      <link>http://amalog.net/post/extract-unique-data/</link>
       <pubDate>Sat, 11 Jun 2016 02:06:04 +0900</pubDate>
       
-      <guid>http://amalog.net/post/count-unique-data/</guid>
+      <guid>http://amalog.net/post/extract-unique-data/</guid>
       <description>
 
 &lt;p&gt;データセットの中でユニークなデータをカウントしたい時があります。&lt;/p&gt;
@@ -59,7 +59,7 @@ TypeError: unhashable type: &#39;list&#39;
 辞書のキーや集合のメンバにはhashableなオブジェクトしかなれません。
 後者の例の場合、1次元のリストを集合型のメンバにしようとしたためエラーが出たのです。&lt;/p&gt;
 
-&lt;h1 id=&#34;解決方法:b07d8120399d542db430d675ea44adce&#34;&gt;解決方法&lt;/h1&gt;
+&lt;h1 id=&#34;解決方法:f4d7d84857d77d53d571ea5976181f8b&#34;&gt;解決方法&lt;/h1&gt;
 
 &lt;p&gt;ざっくり言うと、リストがダメなら
 &lt;strong&gt;hashableなオブジェクトに変換してしまえば良い&lt;/strong&gt;
@@ -74,7 +74,7 @@ In [2]: set(map(tuple, arr))
 Out[2]: {(1, 1, 0), (0, 1, 0), (0, 0, 1), (1, 1, 1)}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;参考資料:b07d8120399d542db430d675ea44adce&#34;&gt;参考資料&lt;/h1&gt;
+&lt;h1 id=&#34;参考資料:f4d7d84857d77d53d571ea5976181f8b&#34;&gt;参考資料&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://docs.python.jp/3.5/library/stdtypes.html?highlight=hashable&#34;&gt;Python標準ライブラリ 組み込み型&lt;/a&gt;&lt;/li&gt;
