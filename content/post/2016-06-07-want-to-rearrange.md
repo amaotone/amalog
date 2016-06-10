@@ -3,7 +3,7 @@ date = "2016-06-07T01:22:03+09:00"
 draft = "true"
 hidefromhome = "false"
 slug = "want-to-rearrange"
-tags = ["diary"]
+tags = ["Diary"]
 title = "模様替えがしたい"
 
 +++

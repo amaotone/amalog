@@ -3,7 +3,7 @@ date = "2016-06-01T00:28:25+09:00"
 draft = "false"
 hidefromhome = "false"
 slug = "data-analysis-with-jupyter"
-tags = ["python"]
+tags = ["Python"]
 title = "Jupyter Notebookで作る快適なデータ解析ライフ"
 
 +++

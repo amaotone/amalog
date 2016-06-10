@@ -1,9 +1,8 @@
 +++
 date = "now()"
 slug = ""
-tags = ["diary"]
+tags = ["Diary"]
 title = ""
 draft = "true"
 hidefromhome = "false"
-
 +++

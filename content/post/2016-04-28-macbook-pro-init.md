@@ -3,7 +3,7 @@ date: "2016-05-04"
 title: "MacBook Pro環境設定メモ"
 slug: "macbook-pro-init"
 description: "MacBook Proを買って最初にやったことをメモしました。"
-tags: ["macbook"]
+tags: ["Mac"]
 ---
 
 # ソフトウェア

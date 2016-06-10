@@ -3,7 +3,7 @@ date: "2016-05-09T20:03:27+09:00"
 slug: "howto-make-powerpoint"
 draft: "true"
 hidefromhome: "false"
-tags: ["design"]
+tags: ["Design"]
 title: "テンプレートを作らずPowerPoint資料を作り始めるなかれ"
 ---
 
