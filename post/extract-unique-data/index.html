@@ -81,7 +81,7 @@ TypeError: unhashable type: 'list'
 辞書のキーや集合のメンバにはhashableなオブジェクトしかなれません。
 後者の例の場合、1次元のリストを集合型のメンバにしようとしたためエラーが出たのです。</p>
 
-<h1 id="解決方法:b07d8120399d542db430d675ea44adce">解決方法</h1>
+<h1 id="解決方法:f4d7d84857d77d53d571ea5976181f8b">解決方法</h1>
 
 <p>ざっくり言うと、リストがダメなら
 <strong>hashableなオブジェクトに変換してしまえば良い</strong>
@@ -96,7 +96,7 @@ In [2]: set(map(tuple, arr))
 Out[2]: {(1, 1, 0), (0, 1, 0), (0, 0, 1), (1, 1, 1)}
 </code></pre>
 
-<h1 id="参考資料:b07d8120399d542db430d675ea44adce">参考資料</h1>
+<h1 id="参考資料:f4d7d84857d77d53d571ea5976181f8b">参考資料</h1>
 
 <ul>
 <li><a href="http://docs.python.jp/3.5/library/stdtypes.html?highlight=hashable">Python標準ライブラリ 組み込み型</a></li>
