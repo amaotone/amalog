@@ -6,8 +6,81 @@
     <description>Recent content in Python on amalog.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 01 Jun 2016 00:28:25 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jun 2016 02:06:04 +0900</lastBuildDate>
     <atom:link href="http://amalog.net/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>集合型で2次元リスト中のユニークな行を抽出する</title>
+      <link>http://amalog.net/post/count-unique-data/</link>
+      <pubDate>Sat, 11 Jun 2016 02:06:04 +0900</pubDate>
+      
+      <guid>http://amalog.net/post/count-unique-data/</guid>
+      <description>
+
+&lt;p&gt;データセットの中でユニークなデータをカウントしたい時があります。&lt;/p&gt;
+
+&lt;p&gt;重複を含んだリストの場合、
+一度集合型(set型)に変換することで重複を排除することができます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;In [1]: lst = [0, 1, 0, 3, 2, 1, 1]
+
+In [2]: set(lst)
+Out[2]: {0, 1, 2, 3}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;しかし、2次元配列にこの方法を適用しようとすると、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;In [1]: arr = [[0,1,0], [1,1,0], [0,0,1], [0,1,0], [1,1,1], [1,1,0]]
+
+In [2]: set(arr)
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+&amp;lt;ipython-input-13-1e4050a05c36&amp;gt; in &amp;lt;module&amp;gt;()
+----&amp;gt; 1 set(arr)
+
+TypeError: unhashable type: &#39;list&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;と怒られます。これは、
+&lt;strong&gt;リストがhashableでない&lt;/strong&gt;
+ことが原因です。&lt;/p&gt;
+
+&lt;p&gt;hashableなオブジェクトは、&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;代入後の変更が不可能&lt;/li&gt;
+&lt;li&gt;他のオブジェクトと比較できる&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;という特徴を持ちます。
+リストは代入後の変更が可能であるため、hashableではないと言えます。&lt;/p&gt;
+
+&lt;p&gt;辞書型と集合型は内部でハッシュ値を使っているため、
+辞書のキーや集合のメンバにはhashableなオブジェクトしかなれません。
+後者の例の場合、1次元のリストを集合型のメンバにしようとしたためエラーが出たのです。&lt;/p&gt;
+
+&lt;h1 id=&#34;解決方法:b07d8120399d542db430d675ea44adce&#34;&gt;解決方法&lt;/h1&gt;
+
+&lt;p&gt;ざっくり言うと、リストがダメなら
+&lt;strong&gt;hashableなオブジェクトに変換してしまえば良い&lt;/strong&gt;
+ということです。&lt;/p&gt;
+
+&lt;p&gt;各行をタプルに変換します。
+タプルはhashableなので、集合型を使ってユニークなデータを抽出できます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;In [1]: arr = [[0,1,0], [1,1,0], [0,0,1], [0,1,0], [1,1,1], [1,1,0]]
+
+In [2]: set(map(tuple, arr))
+Out[2]: {(1, 1, 0), (0, 1, 0), (0, 0, 1), (1, 1, 1)}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;参考資料:b07d8120399d542db430d675ea44adce&#34;&gt;参考資料&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.python.jp/3.5/library/stdtypes.html?highlight=hashable&#34;&gt;Python標準ライブラリ 組み込み型&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Jupyter Notebookで作る快適なデータ解析ライフ</title>
