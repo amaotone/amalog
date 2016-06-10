@@ -10,21 +10,31 @@
     <atom:link href="http://amalog.net/tags/info/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>About</title>
+      <title>About Me</title>
       <link>http://amalog.net/about/</link>
       <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
       
       <guid>http://amalog.net/about/</guid>
       <description>
 
-&lt;p&gt;はじめまして。amaneといいます。1994年生まれの横浜育ちです。&lt;/p&gt;
+&lt;p&gt;はじめまして。amaneといいます。1994年生まれの横浜育ちです。
+気づけばもう21歳。この間まで高校生だったはずなのですが。&lt;/p&gt;
 
 &lt;p&gt;都内で工学部の大学生をやっています。
 分野はケモインフォマティクスと言って、機械学習やディープラーニングを使って化学のデータを解析しています。&lt;/p&gt;
 
-&lt;p&gt;趣味はプログラミングと競技かるた、それと申し訳程度に読書をしています。&lt;/p&gt;
+&lt;p&gt;amalog.netは僕個人のブログです。
+主にプログラミングの話を書いています。
+静的サイトジェネレータのHugoを使ってHTMLを生成し、GitHub Pagesへデプロイしています。
+2016年はアウトプット多めの年にしていきたいと思っていますので、どうぞよろしく。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/sakueji&#34;&gt;Twitter&lt;/a&gt;はほそぼそと。有益な情報はつぶやかないかもしれません。
+&lt;p&gt;プログラミングのほかには競技かるたをやっています。
+『ちはやふる』映画化で少し有名になったので知っている方もいらっしゃるかもしれませんが、
+百人一首を使ったなかなかアツい競技なのです。
+機会があれば『ちはやふる』読んでみてくださいませ。&lt;/p&gt;
+
+&lt;p&gt;SNSはいろいろやっていましたが、最近絞りはじめました。
+&lt;a href=&#34;https://twitter.com/sakueji&#34;&gt;Twitter&lt;/a&gt;はほそぼそと。有益な情報はつぶやかないかもしれません。
 &lt;a href=&#34;https://www.facebook.com/amane.suzu&#34;&gt;Facebook&lt;/a&gt;はリアルの知り合いだけと友達になっています。
 最近は&lt;a href=&#34;https://github.com/amaotone&#34;&gt;Github&lt;/a&gt;を頑張りたいと思っています。&lt;/p&gt;
 
