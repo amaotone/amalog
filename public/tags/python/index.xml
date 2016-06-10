@@ -10,7 +10,7 @@
     <atom:link href="http://amalog.net/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>集合型で2次元リスト中のユニークな行を抽出する</title>
+      <title>集合型で2次元リスト中の重複した行を削除する</title>
       <link>http://amalog.net/post/extract-unique-data/</link>
       <pubDate>Sat, 11 Jun 2016 02:06:04 +0900</pubDate>
       

@@ -4,7 +4,7 @@ draft = "false"
 hidefromhome = "false"
 slug = "extract-unique-data"
 tags = ["Python"]
-title = "集合型で2次元リスト中のユニークな行を抽出する"
+title = "集合型で2次元リスト中の重複した行を削除する"
 +++
 
 データセットの中でユニークなデータをカウントしたい時があります。
