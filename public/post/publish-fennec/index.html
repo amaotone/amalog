@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/atelier-forest-light.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="amalog.net">
+    <title>データ解析のライブラリを作っています</title>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="site-header" role="banner">
+        <div class="site-logo">
+            <a href="/"><img src="/images/profile.jpg" width="50" height="50" alt="amalog.net"></a>
+            <h1 class="site-title"><a href="/">amalog.net</a></h1>
+        </div>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="/about">About</a></li>
+                
+                <li><a href="/">Post</a></li>
+                <li><a href="/index.xml">Feed</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<main role="main" class="single">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 class="entry-title" itemprop="headline">データ解析のライブラリを作っています</h1>
+        <span class="entry-meta"><time itemprop="datePublished" datetime=" 2016-06-19">June 19, 2016</time></span>
+        <section class="entry-body" itemprop="entry-text">
+            
+
+<p>何かデータを解析するとなったとき、</p>
+
+<ol>
+<li>データを読み込む (numpy, pandas)</li>
+<li>前処理をする (sklearn)</li>
+<li>統計的解析をする (sklearn)</li>
+<li>結果を出力する (matplotlib)</li>
+</ol>
+
+<p>というフローが一般的だと思います。</p>
+
+<p>しかし、いろいろなデータを解析していると何度も同じコードを書くシチュエーションが
+出てきます。</p>
+
+<p>そこで、自分がデータ解析を行った時に書いたコードを整理し、
+公開できるものについてはパッケージ化してpypiで公開しようと考えました。</p>
+
+<p>GitHubやTravis CI、テスト駆動開発などの勉強も兼ねています。</p>
+
+<ul>
+<li><a href="http://github.com/amaotone/fennec">http://github.com/amaotone/fennec</a></li>
+</ul>
+
+<p>バリバリα版ですが、人柱大募集中です(笑)</p>
+
+<p>なにかあればIssueでもPull Requestでもいただければ嬉しいです。</p>
+
+<h1 id="参考:b0f4d7fce456ba193b2dc614dd11da70">参考</h1>
+
+<ul>
+<li>pypi関連
+
+<ul>
+<li><a href="http://www.freia.jp/taka/docs/pyhack4/pypi/">PyPIデビュー - 清水川Web</a></li>
+<li><a href="http://docs.python.jp/3.5/distutils/setupscript.html">2. setup スクリプトを書く — Python 3.5 ドキュメント</a></li>
+</ul></li>
+<li>Travis CI
+
+<ul>
+<li><a href="http://rcmdnk.github.io/blog/2014/09/08/computer-github-travis/">Travis CIを使ってみた: GitHubのレポジトリにバッジを貼りたかったから</a></li>
+</ul></li>
+<li>テスト駆動開発
+
+<ul>
+<li><a href="http://pytest.org/latest-ja/">Pytest 公式ドキュメント</a></li>
+<li><a href="http://blog.amedama.jp/entry/2015/09/08/212556">Python: tox を使って複数のバージョンでテストを実行する</a></li>
+</ul></li>
+</ul>
+
+        </section>
+    </article>
+    <div id="disqus_thread"></div>
+    <script>
+        
+
+        
+
+        (function () { 
+            var d = document,
+                    s = d.createElement('script');
+            s.src = '//amalog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the comments.</a></noscript>
+</main>
+
+<footer role="contentinfo">
+    <div class="hr"></div>
+    <div class="footer-link">
+        
+        <a href="https://twitter.com/sakueji" class="twitter" target="_blank"><i class="fa fa-twitter-square"></i></a>
+        <a href="https://www.facebook.com/amane.suzu" class="facebook" target="_blank"><i class="fa fa-facebook-square"></i></a>
+        <a href="https://github.com/amaotone" class="github" target="_blank"><i class="fa fa-github-square"></i></a>
+    </div>
+    <div class="copyright">Copyright &copy; 2016 amalog.net all rights reserved.</div>
+</footer>
+
+</div>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
+
