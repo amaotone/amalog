@@ -6,8 +6,67 @@
     <description>Recent content on amalog.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 11 Jun 2016 02:06:04 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jun 2016 19:56:49 +0900</lastBuildDate>
     <atom:link href="http://amalog.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>データ解析のライブラリを作っています</title>
+      <link>http://amalog.net/post/publish-fennec/</link>
+      <pubDate>Sun, 19 Jun 2016 19:56:49 +0900</pubDate>
+      
+      <guid>http://amalog.net/post/publish-fennec/</guid>
+      <description>
+
+&lt;p&gt;何かデータを解析するとなったとき、&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;データを読み込む (numpy, pandas)&lt;/li&gt;
+&lt;li&gt;前処理をする (sklearn)&lt;/li&gt;
+&lt;li&gt;統計的解析をする (sklearn)&lt;/li&gt;
+&lt;li&gt;結果を出力する (matplotlib)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;というフローが一般的だと思います。&lt;/p&gt;
+
+&lt;p&gt;しかし、いろいろなデータを解析していると何度も同じコードを書くシチュエーションが
+出てきます。&lt;/p&gt;
+
+&lt;p&gt;そこで、自分がデータ解析を行った時に書いたコードを整理し、
+公開できるものについてはパッケージ化してpypiで公開しようと考えました。&lt;/p&gt;
+
+&lt;p&gt;GitHubやTravis CI、テスト駆動開発などの勉強も兼ねています。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://github.com/amaotone/fennec&#34;&gt;http://github.com/amaotone/fennec&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;バリバリα版ですが、人柱大募集中です(笑)&lt;/p&gt;
+
+&lt;p&gt;なにかあればIssueでもPull Requestでもいただければ嬉しいです。&lt;/p&gt;
+
+&lt;h1 id=&#34;参考:b0f4d7fce456ba193b2dc614dd11da70&#34;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;pypi関連
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.freia.jp/taka/docs/pyhack4/pypi/&#34;&gt;PyPIデビュー - 清水川Web&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.python.jp/3.5/distutils/setupscript.html&#34;&gt;2. setup スクリプトを書く — Python 3.5 ドキュメント&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Travis CI
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://rcmdnk.github.io/blog/2014/09/08/computer-github-travis/&#34;&gt;Travis CIを使ってみた: GitHubのレポジトリにバッジを貼りたかったから&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;テスト駆動開発
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://pytest.org/latest-ja/&#34;&gt;Pytest 公式ドキュメント&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.amedama.jp/entry/2015/09/08/212556&#34;&gt;Python: tox を使って複数のバージョンでテストを実行する&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>集合型で2次元リスト中の重複した行を削除する</title>
